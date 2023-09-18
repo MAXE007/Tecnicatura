@@ -1,12 +1,14 @@
-# Ejercicio 3: Insertar elementos y ordenarlos
-
-lista = []
-salir = False
-while not salir:
-    numero = int(input('Escriba un numero: '))
+#Ejercicio 3 : Insertar elementos y ordenarlos
+# Pedir numeros y meterlos en una lista,cuando el usuario
+#Introduzca un numero 0 , nuestro programa dejaria de insertar.
+#Por ultimo,mostrar los numeros ordenados de menor a mayor
+lista=[]
+salir= False
+while not salir :
+    numero= int(input('Digite un numero: '))
     if numero == 0:
-        salir = True
+        salir= True
     else:
         lista.append(numero)
-lista.sort()    #Ordena la lista
+lista.sort() # La lista esta ordenada con esta funcion
 print(f'\nLista ordenada: \n{lista}')
