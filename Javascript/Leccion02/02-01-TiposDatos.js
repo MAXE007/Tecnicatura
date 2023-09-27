@@ -55,3 +55,8 @@ console.log(typeof y);
 //Tipo de dato array y Empty String
 var autos = ['Citroen','Audi','BMW','Ford'];
 console.log(typeof autos);
+console.log(autos);
+
+var z;
+console.log(z);
+console.log(typeof z);
