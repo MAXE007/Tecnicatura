@@ -59,7 +59,7 @@ resultado = sumar2()
 print(f'Resultado de la suma: {resultado}')
 print(f'Resultado de la suma: {sumar2(22, 66)}')
 
-# Argumentos, variables en funciones
+# Argumentos, variables en funcioness
 def listarNombres(*nombres):    #Normalmente se utiliza: *args
     for nombre in nombres:  #Se va a convertir en tupla
         print(nombre)
