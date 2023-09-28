@@ -1,6 +1,6 @@
 #Ejercicio 10: no repetir caracteres
 # Hacer programa que pida una cadena por teclado
-#luego meter los caracteres en una listasin repetir
+#luego meter los caracteres en una lista sin repetir
 cadena = input('Escriba una cadena: ')
 lista = []
 for i in cadena:

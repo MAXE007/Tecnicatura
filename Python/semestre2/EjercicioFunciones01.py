@@ -1,7 +1,7 @@
 #Ejercicio 01: Crear funcion para sumar los valores recibidos de tipo
 #numericos , utilizando argumentos variables *args como parametro de la 
 #funcion y agregar como resultado la suma de todos los valores pasados como argumentos
-def sumar_valor(*args): #Recibimos cantidad de parametros indefinidoss
+def sumar_valor(*args): #Recibimos cantidad de parametros indefinidos
     resultado = 0
     for valor in args:
         resultado += valor

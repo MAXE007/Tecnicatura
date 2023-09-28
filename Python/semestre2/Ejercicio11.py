@@ -1,7 +1,6 @@
 #Ejercicio 11: agenda telefonica
 #Hacer un programa que simule una agenda de contactos. Crear
-#un diccionario donde la clave sea el nombre del usuario y el valor
-#sea el telefono
+#un diccionario donde la clave sea el nombre del usuario y el valor sea el telefono
 
 agenda = {}
 while True:
