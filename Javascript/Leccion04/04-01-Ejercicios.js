@@ -57,3 +57,99 @@ switch(mes){
         estacion = "Valor incorrecto";
 }
 console.log("Bienvenido a la estacion de: "+estacion);
+
+//Evita repetir tu codigo
+//Dry don't repeat yourself
+let days = 1;
+
+switch (days) {
+    case 1:
+        console.log('hoy es lunes')
+        break;
+    case 2:
+        console.log('hoy es martes')
+        break;
+    case 3:
+        console.log('hoy es miercoles')
+        break;
+    case 4:
+        console.log('hoy es jueves')
+        break;
+    case 5:
+        console.log('hoy es viernes')
+        break;
+    case 6:
+        console.log('hoy es sabado')
+        break;
+    case 7:
+        console.log('hoy es domingo')
+        break;   
+
+    default:
+        console.log("Error en el ingreso del dia de la semana");
+        break;
+}
+//esta es la opcion mejorada
+
+let days2 = ['Lunes','Mares','Viernes','Sabado','Domingo'];
+
+function getDay(n){
+    if(n < 1 || n > 7){
+        throw new Error('out of range');
+    }
+    return days2[n-1];
+}
+console.log(getDay(5));
+
+let month = 11;
+switch (month) {
+    case 1:
+        console.log("Es Enero")
+        break;
+    case 2:
+        console.log("Es Febrero")
+         break;
+    case 3:
+        console.log("Es Marzo")
+        break;
+    case 4:
+        console.log("Es Abril")
+        break;
+    case 5:
+        console.log("Es Mayo")
+        break;
+    case 6:
+        console.log("Es Junio")
+        break;
+    case 7:
+        console.log("Es Julio")
+        break;
+    case 8:
+        console.log("Es Agosto")
+        break;
+    case 9:
+        console.log("Es Septiembre")
+        break;
+    case 10:
+        console.log("Es Octubre")
+        break;
+    case 11:
+        console.log("Es Noviembre")
+        break;
+    case 12:
+        console.log("Es Diciembre")
+        break;
+    default:
+        break;
+}
+
+//Esta es la opcion mejorada
+
+let month2 = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciemrbe'];
+function getMonth(n){
+    if(n < 1 || n > 12){
+        throw new Error('Out of range');
+    }
+    return month2[n-1];
+}
+console.log(getMonth(1));
